@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "modern sans";
+    src: url(./fontes/ModernSans-Light.otf);
+}
+
+@font-face {
+    font-family: "mustica pro";
+    src: url(./fontes/MusticaPro-SemiBold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #271041, #965fd4, #271041);
+    animation: float 6s linear infinite alternate;
+    background-repeat: no-repeat;
+}
+
+@keyframes float {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+section {
+    font-family: mustica pro;
+    padding: 45px;
+    background-color: #fff;
+    width: 1500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 2px 15px 20px black;
+}
+
+header img {
+    width: 250px;
+    border-radius: 200px;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.664);
+    margin-left: 20px;
+}
+
+main img {
+    width: 200px;
+    position: absolute;
+    right: 922px;
+    top: 358px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.493);
+}
+
+main h2 {
+    position: absolute;
+    left: 800px;
+    top: 208px;
+    color: #411770;
+    font-size: 100px;
+}
+
+header h3 {
+    font-size: 1.35rem;
+    color: #411770;
+    margin-left: 30px;
+}
+
+header p {
+    color: #411770;
+    margin-left: 30px;
+}
+
+main {
+    font-family: mustica pro;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    background-color: #271041;
+    padding: 15px 0px;
+    border-radius: 5px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.493);
+    transition: all .5s ease-in-out;
+    width: 300px;
+}
+
+main a:hover {
+    opacity: .85;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    font-family: mustica pro;
+    color: white;
+}
